@@ -1,0 +1,400 @@
+.block-text{
+	text-align: center; overflow: hidden; margin: 38px 0 82px 0;
+	.item{
+		padding: 0 5%;
+		h3{
+			font-size: 20px; color: @body-color; position: relative; text-transform: capitalize; font-weight: 600; margin-bottom: 44px;
+			&:before{
+				content: ""; width: 50px; height: 4px; background: #edacac; position: absolute; bottom: -25px; left: 50%; margin-left: -25px;
+			}
+		}
+		p{
+			font-size: 13px; line-height: 23px !important;
+		}
+		&.item2{
+			h3:before{
+				background: #acdaed;
+			}
+		}
+		&.item3{
+			h3:before{
+				background: #ede3ac;
+			}
+		}
+	}
+}
+/*==============featured captegories==================*/
+.wp-comingsoon {
+	background: url('../assets/img/bg-comingsoon.jpg') no-repeat center center;	
+	text-align: center;
+	.title-comingsoon {
+		margin-bottom: 40px;
+		margin-top: 330px;
+		h1 {
+			color: #fff;
+			font-size: 32px;
+			font-weight: 700 !important;
+			text-transform: uppercase;
+		}
+		.des-comingsoon {
+			font-size: 13px;
+			color: #e0e0e0;
+			width:60%;
+			line-height:24px;
+			margin:25px auto 0;
+			text-align:center;
+		}
+	}
+	.countdown-shortcode {
+		margin-bottom: 280px;
+	}
+	.social-comingsoon {
+		.menu-social {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0;
+			text-align: center;
+			list-style-type: none;
+			li {
+				float: left;
+				margin: 0 5px;
+				a {
+					display: inline-block;
+					vertical-align: top;
+					color: #818180;
+					font-size: 14px;
+					width: 46px;
+					height: 46px;
+					line-height: 46px;
+					overflow: hidden;
+					background-color: rgba(255, 255, 255, .1);
+					.border-radius(100%);
+					.transition(all .3s);
+					&:hover {
+						background-color: @color;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.footer-comingsoon {
+		padding: 17px 0;
+		line-height: 20px;
+		background-color: rgba(0, 0, 0, .7);
+		color: #fff;
+		a {
+			color: @color;
+			&:hover { color: darken(@color, 10%); }
+		}
+	}
+}
+
+.comming-soon{
+	text-align: center;
+	.ClassyCountdown-wrapper{
+		display:inline-block;
+		overflow:hidden;
+		> div {
+			display: inline-block;
+			position: relative;
+			width: 120px;
+			margin: 10px 15px;
+			float:left;
+			.rtl &{
+				float:right;
+			}
+		}
+	}
+	.ClassyCountdown-wrapper .ClassyCountdown-value {
+		>div {
+			position: absolute;
+			font-size: 34px !important;
+			font-weight: bold;
+			font-weight: 700;
+			color: #fff;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			line-height: 100px;
+		}
+		>span {
+			font-size: 14px !important;
+			font-weight: 700;
+			color: #fff !important;
+			display: inline-block;
+			top: -45px;
+			position:relative;
+			text-transform: uppercase;
+		}
+	}
+}
+@-moz-document url-prefix() { 
+	.comming-soon .ClassyCountdown-wrapper .ClassyCountdown-value > span{
+		margin-top:-50px;
+		top:auto;
+	}
+}
+/*
+*	Breadcrumbs 
+*/
+.floris_breadcrumbs{
+	margin-top: 36px;
+	.listing-title{
+		margin-bottom:30px;
+		h1{
+			margin-top: 0;
+		}
+	}
+	.breadcrumbs .breadcrumb{
+		margin: 0;
+		background-color:#fff;
+		padding:0 0 36px;
+		> li{
+			font-size;12px;
+			color:#7d7d7d;
+			text-transform:uppercase;
+			font-weight: 600;
+			&:last-child{
+				span.go-page{
+					display:none;
+				}
+			}
+			+ li{
+				&:before{
+					content:'';
+					padding:0;
+				}
+			}
+			> 	.go-page{
+				&:before{
+					content:'\f105';
+					font-family:'FontAwesome';
+					padding:0 15px;
+				}
+				.rtl &{
+					float:left;
+					&:before{
+						content:'\f104';
+					}
+				}
+			}
+			> a{
+				color:#7d7d7d;
+				&:hover{
+					color:@color;
+				}
+			}
+		}
+	}
+}
+/* ====================================================== */
+/* ====================================================== */
+.page, .search{
+	.body-wrapper-inner >.container{
+		min-height: 70vh;
+	}
+}
+.search{
+	&.search-results .page.type-page .entry-content{
+		.entry-meta i{
+			margin-right:5px;
+		}
+		.bl_read_more {
+			a{
+				text-transform:capitalize;
+				color:@color;
+				display:inline-block;
+				&:hover{
+					opacity:0.8;
+				}
+			}
+			i {
+				margin: 0 5px;
+			}
+		}
+	}
+	.listing-title h1 small{
+		color: @color;
+	}
+	.floris_breadcrumbs .breadcrumbs .breadcrumb{
+		padding-bottom: 0;
+	}
+	.blog-content .pagination{
+		margin-bottom:40px;
+	}
+	&.rtl .listing-title h1 small{
+		float:right;
+	}
+	.listing-title h1{
+		font-size: 24px;
+		small{
+			position:relative;
+			&:before{
+				content:'"';
+				display:inline-block;
+				margin:0 5px;
+			}
+			&:after{
+				content:'"';
+				display:inline-block;
+				margin:0 5px;
+			}
+		}
+	}
+	.products-wrapper{
+		padding:0;
+	}
+	.pag-search  > .pagination{
+		margin-bottom:40px;		
+	}
+	.no-result{
+		margin-bottom: 40px;
+		p{
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+		form{
+			label{
+				display: none;
+			}
+			max-width: 100%;
+			min-height: 40px;
+			position: relative;
+			input[type="text"],input[type="password"]{
+				border-radius: 0;
+				padding: 15px 85px 15px 20px;
+				width: 100%;
+			}
+			input[type="submit"]{
+				background: @color;
+				border: 1px solid @color;
+				border-radius: 0;
+				color: #fff;
+				padding: 15px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				text-transform: uppercase;
+				&:hover{
+					background: darken(@color, 10);
+					border-color: darken(@color, 10);
+				}
+			}
+		}
+	}
+	&.rtl{
+		.no-result{
+			form{
+				input[type="text"]{
+					padding: 15px 20px 15px 85px;
+				}
+				input[type="submit"]{
+					right: auto;
+					left: 0;
+				}
+			}
+		}
+	}
+}
+.content-search {
+	>.post , .page, .testimonial, .team, .portfolio, .product {
+		background-color: #fff;
+		margin-bottom: 30px;
+		padding:0 0 30px 0; border-bottom: 1px @border-color solid;
+		.entry-thumb {
+			padding-right: 30px;
+			.rtl & {
+				padding-left: 30px;
+				padding-right: 0;
+			}
+		}
+		.entry-content {
+			overflow: hidden;
+			.title-blog {
+				h3 {
+					font-size: 18px;
+					color: #111;	
+				}
+			}
+			.entry-meta{
+				margin-bottom: 10px;
+				.entry-author {
+					color:#999;
+					a{
+						color:#999;
+						&:hover{
+							color:@color;
+						}
+					}
+				}
+				i {
+					margin-right: 5px;
+					.rtl & {
+						margin-right: 0;
+						margin-left: 5px;
+					}
+				}
+				a{
+					color:#999;
+					&:hover{
+						color:@color;
+					}
+				}
+				>span {
+					padding-right: 20px;
+					display: inline-block;
+					vertical-align: top;
+					color:#999;
+					.rtl & {
+						padding-right: 0;
+						padding-left: 20px;
+					}
+				}
+			}
+			.entry-description {
+				margin-bottom: 10px;
+			}
+			.bl_read_more{
+				a{
+					text-transform:capitalize;
+					color:@color;
+					&:hover{
+						opacity:0.8;
+					}
+				}
+				i {
+					margin: 0 5px;
+				}
+			}
+		}
+	}
+}
+/*
+* Hack css firefox
+*/
+@-moz-document url-prefix() {
+	
+}
+.home.blog .header{
+	margin-bottom:30px;
+} 
+.home.blog .category-header .entry-title{
+	font-weight: 700 !important;
+	font-size:28px;
+	text-transform:uppercase;
+	margin:0 0 20px;
+}
+/* hover image*/
+.image-hover{
+	&:hover .wrap-content{
+		h3{
+			color:@color;
+		}
+	}
+}
+/*ie11*/
+_:-ms-fullscreen, :root .floris_top .top-form.top-search select::-ms-expand{ 
+	display:none;
+}
+

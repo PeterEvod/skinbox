@@ -1,0 +1,193 @@
+.home-style2{
+	.responsive-post-slider .resp-slider-container .block-title{
+		margin-bottom: 47px;
+	}
+}
+.header-style2{
+	border-bottom: 1px @border-color solid;
+	.home-style2 &{
+		border-bottom: none;
+	}
+	.header-top {
+		background: #ebebeb; min-height: 43px;
+		.left-header{
+			margin-top: 3px;
+		}
+		.mid-header{
+			margin-top: 13px; text-transform: capitalize;
+		}
+	}
+	.header-mid{
+		padding: 0;
+		.top-header{
+			padding: 27px 0 23px 0;
+		}
+		.main-menu{
+			padding-top: 18px;
+		}
+		.search-cate{
+			margin-top: 30px; position: relative;
+			.icon-search{
+				width: 35px; height: 35px; line-height: 35px; text-align: center; cursor: pointer;
+			}	
+			.top-form.top-search{
+				position: absolute; right: 0; top: 36px; display: none;
+				.rtl &{
+					right: auto; left: 0;
+				}
+			}
+		}
+	}
+	#lang_sel > ul.nav{
+		.rtl &{
+			margin-right: 0;
+		}
+	}
+}
+.form-new2{
+	float: right;
+	.rtl &{
+		float: left;
+	}
+	h3{
+		float: left; font-size: 20px; color: @body-color; text-transform: capitalize; padding-top: 17px; padding-right: 20px;
+		.rtl &{
+			float: right;
+		}
+		.rtl &{
+			padding-right: 0; padding-left: 20px;
+		}
+	}
+	.mc4wp-form{
+		float: right; border-left: 1px @border-color solid;
+		.rtl &{
+			float: left;
+		}
+		.rtl &{
+			border-left: none; border-right: 1px @border-color solid;
+		}
+		p{
+			margin-bottom: 0;
+		}
+		.mc4wp-form-fields{
+			overflow: hidden; min-width: 400px;
+		}
+		input[type="email"]{
+			border: none; border-radius: 0;	color:#8c8c8c; font-size: 12px; margin-bottom: 0;
+			height:60px; line-height: 60px; padding: 0 15px; width: 75%; float: left;
+			.rtl &{
+				float: right;
+			}
+		}
+		input[type="submit"]{
+			border: none; border-radius: 0; width: 25%; font-size: 12px; padding: 0;
+			background:#0d0d0d; height:60px; line-height: 60px;
+			color:#fff;	text-transform:capitalize; text-align: center; float: left; .transition(all 0.3s);
+			.rtl &{
+				float: right;
+			}
+			&:hover{
+				color: @color; .transition(all 0.3s);
+			}
+		}
+		.mc4wp-success{
+			color: @body-color;
+		}		
+	}
+}
+.socials-ft{
+	text-align: center; float: left;
+	.rtl &{
+		float: right;
+	}
+	p{
+		font-size: 12px; color: #d1d1d1; line-height: 22px;
+	}
+	ul{
+		margin: 0; list-style: none;
+		li{
+			float: left;
+			.rtl &{
+				float: right;
+			}
+			a{
+				color: #8c8c8c; border-left: 1px @border-color solid; font-size: 18px; width: 60px; height: 60px; line-height: 60px;
+				display: inline-block; vertical-align: top; .transition(all 0.3s); 
+				.rtl &{
+					border-right: 1px @border-color solid; border-left: none;
+				}
+				&:hover{
+					color: @color; .transition(all 0.3s); background: @color; color: #fff;
+				}
+			}
+			&:last-child{
+				a{
+					border-right: 1px @border-color solid;
+					.rtl &{
+						border-left: 1px @border-color solid;
+					}
+				}
+			}
+		}
+	}
+}
+.border-ft{
+	border: 1px @border-color solid; border-width: 1px 0;
+	.wpb_raw_html, .wpb_content_element{
+		margin: 0; overflow: hidden;
+	}
+}
+.footer-style2{
+	background: #f4f4f4;
+	.vc_column-inner {
+		padding: 0 !important;
+	}
+	.footer-center{
+		margin: 0; padding: 30px 15px 38px 15px; overflow: hidden;
+		.logo-bottom{
+			float: left; margin-right: 70px; position: relative; padding-top: 13px;
+			.rtl &{
+				float: right; margin-right: 0; margin-left: 70px;
+			}
+			a{
+				img{
+					width: auto; margin: 0;
+				}
+			}
+			&:after{ 
+				content: ""; width: 1px; height: 40px; background: #d6d6d6; right: -35px; top: 15px; position: absolute;
+				.rtl &{
+					right: auto; left: -35px;
+				}
+			}
+		}
+		p{
+			padding-top: 15px; overflow: hidden; line-height: 23px;
+		}
+	}
+}
+.footer-menu-style{
+	background: #EBEBEB; padding: 30px 0;
+	.widgettitle{
+		font-size: 20px;color: @body-color;margin-bottom: 20px;
+	}
+	ul{
+		li{
+			a{
+				text-transform: capitalize; line-height: 26px;
+				&:hover{
+					color: @color;
+				}
+			}
+		}
+	}
+}
+.block-title2{
+	text-align: center; padding-bottom: 13px;
+	h3{
+		font-size: 30px; color: @body-color; font-weight: 600; text-transform: capitalize; margin-bottom: 13px;
+	}
+	.slider-description{
+		text-align: center; font-size: 14px; color: #666;
+	}
+}

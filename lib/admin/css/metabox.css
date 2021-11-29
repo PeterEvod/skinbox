@@ -1,0 +1,118 @@
+/**
+ * Widget Options
+ */
+*, html{
+	outline: none !important;
+}
+.clearfix::before, .clearfix::after {
+    content: " ";
+    display: table;
+}
+.pull-left{
+	float: left;
+}
+.floris-metabox{
+	margin: -6px -12px -12px;
+}
+.floris-metabox a{
+	text-decoration: none;
+}
+.floris-metabox .floris-metabox-content{
+	position: relative;
+	overflow: hidden;
+	background: #eee;
+}
+.floris-metabox .floris-metabox-content .nav-tabs{
+	float: left;
+	width: 20%;
+	background: #eee;
+	margin: 0;
+}
+.floris-metabox .floris-metabox-content .nav-tabs > li{
+	margin: 0;
+}
+.floris-metabox .floris-metabox-content .nav-tabs > li > a{
+	display: block;
+	padding: 10px;
+	color: #444;
+	font-weight: bold;
+}
+.floris-metabox .floris-metabox-content .nav-tabs > li.active > a{
+	background: #fff;
+}
+.floris-metabox .floris-metabox-content .nav-tabs > li + li > a{
+	border-top: 1px solid #fefefe;
+}
+.floris-metabox .floris-metabox-content .tab-content{
+	overflow: hidden;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane{
+	padding: 0;
+	display: none;
+	background: #fff;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane.active{
+	display: block;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner{
+	overflow: hidden;
+	clear: both;
+	padding: 30px 15px;
+	border-bottom: 1px solid #eee;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-description{
+	width: 45%;
+	margin-right: 30px;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-description .flytab-item-title{
+	font-weight: bold;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-description .flytab-item-shortdes{
+	font-style: italic;
+	color: #999;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-content{
+	overflow: hidden;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-content input[type="text"]{
+	width: 80%;
+	padding: 5px;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-content .page-metabox-radio label,
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-content .page-metabox-radio-img label{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px;
+	text-align: center;
+	position: relative;
+	width: 50px;
+	padding: 5px;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-content .page-metabox-radio-img label .page-radio-color{
+	position: absolute;
+	top: 5px;
+	width: 30px;
+	border-radius: 50%;
+	left: 50%;
+	margin-left: -15px;
+	height: 30px;
+	
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-content .page-metabox-radio-img label .page-radio-color:before{
+	content: '';
+	position: absolute;
+	z-index: 9;
+	top: -5px;
+	left: -15px;
+	height: 80px;
+	right: -15px;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-content .page-metabox-radio-img label.floris-radio-img-selected{
+	background: #eee;
+}
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-content .page-metabox-radio label span,
+.floris-metabox .floris-metabox-content .tab-content .tab-pane .tab-inner .flytab-content .page-metabox-radio-img label span{
+	display: inline-block;
+	margin-top: 15px;
+	text-transform: capitalize;
+}

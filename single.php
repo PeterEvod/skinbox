@@ -1,0 +1,1 @@
+<?php floris_content_detail_check() ?>
